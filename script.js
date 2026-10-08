@@ -3,22 +3,51 @@ const learnButton = document.getElementById("learnBtn");
 learnButton.addEventListener("click", function() {
     alert("Welcome! You just used JavaScript!");
 });
+
+
 const contactForm = document.getElementById("contactForm");
 const formMessage = document.getElementById("formMessage");
 
-contactForm.addEventListener("submit", function(event) {
+
+contactForm.addEventListener("submit", async function(event) {
 
     event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+    const formData = new FormData(contactForm);
 
-    console.log("Name:", name);
-    console.log("Email:", email);
-    console.log("Message:", message);
+    formMessage.textContent = "Sending message...";
 
-    formMessage.textContent = "Message received! Thank you, " + name + ".";
+    try {
 
-    contactForm.reset();
+        const response = await fetch(contactForm.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json"
+            }
+        });
+
+        if (response.ok) {
+
+            const name = document.getElementById("name").value;
+
+            formMessage.textContent =
+                "Message sent successfully! Thank you, " + name + ".";
+
+            contactForm.reset();
+
+        } else {
+
+            formMessage.textContent =
+                "Something went wrong. Please try again.";
+
+        }
+
+    } catch (error) {
+
+        formMessage.textContent =
+            "Unable to send message. Please try again.";
+
+    }
+
 });
