@@ -40,7 +40,7 @@ body::before {
     width: 500px;
     height: 500px;
 
-    background: #2563eb;
+    background: #d53131;
 
     border-radius: 50%;
 
@@ -63,7 +63,7 @@ body::after {
     width: 450px;
     height: 450px;
 
-    background: #9333ea;
+    background: #a9d71f;
 
     border-radius: 50%;
 
@@ -172,7 +172,7 @@ body::after {
     width: 0;
     height: 2px;
 
-    background: #60a5fa;
+    background: #8af15b;
 
     transition: 0.3s;
 }
@@ -274,7 +274,7 @@ body::after {
 
 .hero h1 span {
 
-    color: #60a5fa;
+    color: #bded4b;
 }
 
 .description {
