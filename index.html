@@ -1,139 +1,435 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ASHWIN  OF KERALA</title>
+    <meta name="description"
+        content="Welcome to Ashwin's portfolio — student, programmer, project developer, Discord bot developer, and gamer. Explore my skills and projects.">
 
+    <meta name="theme-color" content="#080808">
+
+    <title>Ashwin | Developer & Gamer</title>
+
+    <!-- Main Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Animated Gold Background -->
+    <link rel="stylesheet" href="3d_animated_background.css">
 </head>
 
 <body>
 
+    <!-- Animated Background -->
+    <div class="bg-3d" aria-hidden="true">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="cube cube-one"></div>
+        <div class="cube cube-two"></div>
+        <div class="ring"></div>
+    </div>
+
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">ASHWIN  OF KERALA</div>
+    <nav class="navbar" aria-label="Main navigation">
+
+        <a href="#home" class="logo">ASHWIN<span>.</span></a>
 
         <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Apply for loan</a>
-</div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
     </nav>
 
-
     <!-- Hero Section -->
-  <main class="hero" id="home">
+    <main class="hero" id="home">
 
-        <p class="small-title">LOAN APPLICATION</p>
-        <img src="images/profile.png" alt="My profile photo" class="profile-image">
+        <p class="small-title">STUDENT • PROGRAMMER • CREATOR</p>
 
-        <h1>WOMEN . HOME. <span>HEALTH LOANS.</span></h1>
+        <img
+            src="images/profile.png"
+            alt="Ashwin's profile photo"
+            class="profile-image"
+            loading="eager"
+        >
+
+        <h1>
+            HI, I'M <span>ASHWIN</span>
+        </h1>
+
+        <h2>DEVELOPER &amp; GAMER</h2>
 
         <p class="description">
-            SCROLL DOWN TO APPLY .
+            I'm a student passionate about programming, software development,
+            machine learning, and gaming. From building intelligent projects
+            to developing Discord bots, I enjoy turning ideas into reality.
         </p>
 
         <div class="buttons">
-            <button id="learnBtn">FAST LOAN</button>
-            <button class="secondary-btn">2% INTEREST PLANS</button>
+            <a href="#projects" class="primary-btn">
+                EXPLORE MY PROJECTS
+            </a>
+
+            <a href="#contact" class="secondary-btn">
+                LET'S CONNECT
+            </a>
         </div>
+
+        <p class="hero-tagline">
+            BUILDING IDEAS. WRITING CODE. CREATING POSSIBILITIES.
+        </p>
 
     </main>
+
+    <!-- About Section -->
     <section class="section" id="about">
 
-    <p class="small-title">ABOUT INDUSLAND</p>
+        <p class="small-title">A LITTLE ABOUT ME</p>
 
-    <h2>FAST LOAN PROVIDERS, LESS INTEREST PLANS, EASY PAYBACK, INSURANCE POLICIES</h2>
+        <h2>ABOUT ME</h2>
 
-    <p>
-            SCROLL DOWN TO APPLY
-    </p>
+        <p>
+            Hi, I'm Ashwin! I'm a student with a strong interest in
+            programming, software development, and technology.
+            I enjoy exploring new technologies and developing practical
+            projects that solve real-world problems.
+        </p>
 
-</section>
-<section class="section" id="projects">
+        <p>
+            My programming interests include Python, C, and Java.
+            One of my projects is a Mango Leaf Disease Identifier,
+            focused on identifying diseases affecting mango leaves.
+            I'm also interested in Discord bot development, automation,
+            and building engaging online communities.
+        </p>
 
-    <p class="small-title">APPLY SOON FOR WOMEN LOANS</p>
+        <p>
+            Outside programming, I enjoy gaming, exploring new ideas,
+            and learning new technical skills. I'm always looking for
+            opportunities to improve, experiment, and create something
+            meaningful.
+        </p>
 
-    <h2>WOMENS LOANS PROVIDED FOR 0% INTEREST</h2>
+        <div class="about-highlights">
 
-    <div class="projects">
+            <div class="project-card">
+                <h3>01.</h3>
+                <h4>STUDENT</h4>
+                <p>Learning, experimenting, and growing every day.</p>
+            </div>
 
-        <div class="project-card">
-            <h3>FEW STEPS TO GET LOAN</h3>
-            <p>
-                FAST RESPONSE.
-            </p>
+            <div class="project-card">
+                <h3>02.</h3>
+                <h4>PROGRAMMER</h4>
+                <p>Turning ideas into practical software projects.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>03.</h3>
+                <h4>GAMER</h4>
+                <p>Exploring virtual worlds and gaming communities.</p>
+            </div>
+
         </div>
 
-        <div class="project-card">
-            <h3>HOME LOAN PROVIDE WITHIN 10 DAYS</h3>
-            <p>
-                CHECK IT OUT.
-            </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+
+        <p class="small-title">MY TECHNICAL TOOLKIT</p>
+
+        <h2>SKILLS &amp; INTERESTS</h2>
+
+        <p>
+            Technologies and areas I'm learning, exploring, and working with.
+        </p>
+
+        <div class="projects">
+
+            <div class="project-card">
+                <h3>PROGRAMMING</h3>
+                <p>
+                    Python, C, and Java. Writing code, understanding
+                    programming concepts, and solving problems.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>WEB DEVELOPMENT</h3>
+                <p>
+                    HTML, CSS, and JavaScript for creating modern,
+                    responsive, and interactive websites.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>MACHINE LEARNING</h3>
+                <p>
+                    Exploring machine learning through practical
+                    projects, including a Mango Leaf Disease Identifier.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>DISCORD DEVELOPMENT</h3>
+                <p>
+                    Developing Discord bots, implementing commands,
+                    integrating features, and exploring automation.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>PROBLEM SOLVING</h3>
+                <p>
+                    Troubleshooting technical issues, learning new
+                    tools, and finding creative solutions.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>GAMING &amp; TECHNOLOGY</h3>
+                <p>
+                    Gaming, exploring online communities, and
+                    discovering new technologies and ideas.
+                </p>
+            </div>
+
         </div>
 
-        <div class="project-card">
-            <h3>CAR LOANS</h3>
-            <p>
-                EASY EMI.
-            </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+
+        <p class="small-title">IDEAS TURNED INTO PROJECTS</p>
+
+        <h2>FEATURED PROJECTS</h2>
+
+        <p>
+            A collection of my development work, experiments,
+            and ongoing projects.
+        </p>
+
+        <div class="projects">
+
+            <!-- Project 01 -->
+            <div class="project-card">
+
+                <p class="small-title">PROJECT 01</p>
+
+                <h3>MANGO LEAF DISEASE IDENTIFIER</h3>
+
+                <p>
+                    A project focused on identifying diseases affecting
+                    mango leaves. It explores how technology can help
+                    recognise plant health issues.
+                </p>
+
+                <p>
+                    <strong>Focus:</strong> Plant health identification
+                    and intelligent project development.
+                </p>
+
+                <a href="#contact">ASK ABOUT THIS PROJECT →</a>
+
+            </div>
+
+            <!-- Project 02 -->
+            <div class="project-card">
+
+                <p class="small-title">PROJECT 02</p>
+
+                <h3>DISCORD MUSIC BOT</h3>
+
+                <p>
+                    A personal Discord music bot designed to join voice
+                    channels and respond to commands for music playback.
+                    Features include play, pause, skip, join, and leave.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong> JavaScript,
+                    Node.js, Discord.js, and Discord Player.
+                </p>
+
+                <a href="#contact">ASK ABOUT THIS PROJECT →</a>
+
+            </div>
+
+            <!-- Project 03 -->
+            <div class="project-card">
+
+                <p class="small-title">PROJECT 03</p>
+
+                <h3>DISCORD COMMUNITY DEVELOPMENT</h3>
+
+                <p>
+                    Exploring Discord server setup, bot integration,
+                    community features, and server management to create
+                    organised and engaging online spaces.
+                </p>
+
+                <p>
+                    <strong>Focus:</strong> Discord communities,
+                    automation, and server configuration.
+                </p>
+
+                <a href="#contact">LET'S CONNECT →</a>
+
+            </div>
+
+            <!-- Project 04 -->
+            <div class="project-card">
+
+                <p class="small-title">PROJECT 04</p>
+
+                <h3>PERSONAL PORTFOLIO</h3>
+
+                <p>
+                    My own portfolio website, built to present my
+                    introduction, programming skills, development
+                    projects, and technical interests.
+                </p>
+
+                <p>
+                    <strong>Technologies:</strong> HTML, CSS,
+                    and JavaScript.
+                </p>
+
+                <a href="#home">YOU'RE EXPLORING IT NOW ↑</a>
+
+            </div>
+
+            <!-- Project 05 -->
+            <div class="project-card">
+
+                <p class="small-title">PROJECT 05</p>
+
+                <h3>FIVEM ROLEPLAY SERVER</h3>
+
+                <p>
+                    Exploring FiveM server configuration, QBCore,
+                    roleplay server customisation, loading screens,
+                    and community features.
+                </p>
+
+                <p>
+                    <strong>Focus:</strong> Game server configuration
+                    and roleplay experiences.
+                </p>
+
+                <a href="#contact">ASK ABOUT THIS PROJECT →</a>
+
+            </div>
+
+            <!-- Project 06 -->
+            <div class="project-card">
+
+                <p class="small-title">WHAT'S NEXT?</p>
+
+                <h3>FUTURE PROJECTS</h3>
+
+                <p>
+                    I'm constantly learning and exploring new ideas.
+                    More projects, experiments, and technical
+                    achievements will be added as I develop them.
+                </p>
+
+                <a href="#contact">LET'S CONNECT →</a>
+
+            </div>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- Contact Section -->
+    <section class="section" id="contact">
 
-<section class="section" id="contact">
+        <p class="small-title">HAVE AN IDEA?</p>
 
-    <p class="small-title">APPLY HERE</p>
+        <h2>LET'S CONNECT</h2>
 
-    <h2>GIVE THE DETAILS BELOW</h2>
+        <p>
+            Have a question about my projects, want to collaborate,
+            or simply want to connect? Send me a message!
+        </p>
 
-    <form
-    id="contactForm"
-    class="contact-form"
-    action="https://formspree.io/f/xkjorber"
-    method="POST"
->
+        <form
+            id="contactForm"
+            class="contact-form"
+            action="https://formspree.io/f/xkjorber"
+            method="POST"
+        >
 
-    <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="APPLICANT NAME"
-        required
-    >
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="YOUR NAME"
+                autocomplete="name"
+                aria-label="Your name"
+                required
+            >
 
-    <input
-        type="name"
-        id="name"
-        name="email"
-        placeholder="BANK ACCOUNT NUMBER (SBI,KARNATAKA BANK,ICICI,)"
-        required
-    >
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="YOUR EMAIL ADDRESS"
+                autocomplete="email"
+                aria-label="Your email address"
+                required
+            >
 
-    <textarea
-        id="message"
-        name="message"
-        placeholder="AMOUNT REQUESTED"
-        rows="5"
-        required
-    ></textarea>
+            <textarea
+                id="message"
+                name="message"
+                placeholder="TELL ME WHAT'S ON YOUR MIND"
+                rows="5"
+                aria-label="Your message"
+                required
+            ></textarea>
 
-    <button type="submit">
-        Send Message
-    </button>
+            <button type="submit">
+                SEND MESSAGE
+            </button>
 
-    <p id="formMessage"></p>
+            <p id="formMessage" aria-live="polite"></p>
 
-</form>
+        </form>
 
+    </section>
 
-</section>
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © <span id="year"></span> ASHWIN.
+            ALL RIGHTS RESERVED.
+        </p>
+
+        <p>STUDENT • PROGRAMMER • CREATOR • GAMER</p>
+
+        <a href="#home">BACK TO TOP ↑</a>
+
+    </footer>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
+    <script>
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
 </body>
+
 </html>
+```
