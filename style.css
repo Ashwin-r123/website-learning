@@ -499,7 +499,7 @@ section {
     padding: clamp(20px, 4vw, 34px);
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    background: linear-gradient(145deg, rgba(20, 31, 59, 0.84), rgba(10, 16, 33, 0.88));
+    background: linear-gradient(145deg, rgba(29, 31, 8, 0.84), rgba(10, 16, 33, 0.88));
     box-shadow: var(--shadow);
     backdrop-filter: blur(14px);
 }
