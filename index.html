@@ -18,6 +18,9 @@
 
     <!-- Animated Gold Background -->
     <link rel="stylesheet" href="3d_animated_background.css">
+
+    <!-- Main JavaScript: runs after the HTML has been parsed -->
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -349,70 +352,70 @@
 
     </section>
 
-    <!-- Contact Section -->
-    <section class="section" id="contact">
+   
+<!-- Contact Section -->
+<section class="section" id="contact">
 
-        <p class="small-title">HAVE AN IDEA?</p>
+    <p class="small-title">LET'S CONNECT</p>
 
-        <h2>LET'S CONNECT</h2>
+    <h2>GET IN TOUCH</h2>
 
-        <p>
-            Have a question about my projects, want to collaborate,
-            or simply want to connect? Send me a message!
-        </p>
+    <p>
+        Have a question, an idea, or a project in mind?
+        Send me a message!
+    </p>
 
-        <form
-            id="contactForm"
-            class="contact-form"
-            action="https://formspree.io/f/xkjorber"
-            method="POST"
+    <form
+        id="contactForm"
+        class="contact-form"
+        action="https://formspree.io/f/xkjorber"
+        method="POST"
+    >
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="YOUR NAME"
+            autocomplete="name"
+            required
         >
 
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="YOUR NAME"
-                autocomplete="name"
-                aria-label="Your name"
-                required
-            >
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="YOUR EMAIL ADDRESS"
+            autocomplete="email"
+            required
+        >
 
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="YOUR EMAIL ADDRESS"
-                autocomplete="email"
-                aria-label="Your email address"
-                required
-            >
+        <textarea
+            id="message"
+            name="message"
+            placeholder="YOUR MESSAGE"
+            rows="5"
+            required
+        ></textarea>
 
-            <textarea
-                id="message"
-                name="message"
-                placeholder="TELL ME WHAT'S ON YOUR MIND"
-                rows="5"
-                aria-label="Your message"
-                required
-            ></textarea>
+        <button type="submit" id="submitButton">
+            SEND MESSAGE
+        </button>
 
-            <button type="submit">
-                SEND MESSAGE
-            </button>
+        <p id="formMessage" role="status" aria-live="polite"></p>
 
-            <p id="formMessage" aria-live="polite"></p>
+    </form>
 
-        </form>
+</section>
 
-    </section>
+
 
     <!-- Footer -->
     <footer>
 
         <p>
-            © <span id="year"></span> ASHWIN
-            All Rights Reserved.
+            © <span id="year"></span> ASHWIN.
+            ALL RIGHTS RESERVED.
         </p>
 
         <p>STUDENT • PROGRAMMER • CREATOR • GAMER</p>
@@ -421,15 +424,17 @@
 
     </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+<!-- Load the external JavaScript file -->
+<script src="script.js"></script>
 
-    <script>
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
-    </script>
+<!-- Display the current year -->
+<script>
+    const yearElement = document.getElementById("year");
+
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+</script>
 
 </body>
-
 </html>
-```

@@ -681,3 +681,466 @@ footer {
         transition-duration: 0.01ms !important;
     }
 }
+```css
+/* Contact form status message */
+
+#formMessage {
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.6;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+/* =========================================
+   ASHWIN R — PREMIUM GOLD ANIMATIONS
+   Theme: Luxury Black & Gold
+========================================= */
+
+:root {
+    --gold: #d4af37;
+    --gold-light: #ffe9a3;
+    --gold-dark: #997515;
+    --black: #080808;
+    --gold-glow: rgba(212, 175, 55, 0.25);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* Improve transitions */
+a,
+button,
+.project-card,
+.profile-image,
+input,
+textarea {
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.35s ease,
+        transform 0.35s ease,
+        opacity 0.35s ease;
+}
+
+/* =========================================
+   GOLD SELECTION
+========================================= */
+
+::selection {
+    background: var(--gold);
+    color: #080808;
+}
+
+/* =========================================
+   NAVIGATION EFFECTS
+========================================= */
+
+.navbar {
+    transition:
+        background-color 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.navbar .logo {
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
+}
+
+.navbar .logo:hover {
+    color: var(--gold-light);
+    text-shadow: 0 0 18px var(--gold-glow);
+}
+
+.nav-links a {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Animated underline */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        var(--gold-dark),
+        var(--gold-light),
+        var(--gold)
+    );
+    box-shadow: 0 0 10px var(--gold-glow);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--gold-light);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero .small-title {
+    animation: fadeUp 0.8s ease both;
+}
+
+.hero h1 {
+    animation: fadeUp 0.9s ease 0.1s both;
+}
+
+.hero h2 {
+    animation: fadeUp 0.9s ease 0.2s both;
+}
+
+.hero .description {
+    animation: fadeUp 0.9s ease 0.3s both;
+}
+
+.hero .buttons {
+    animation: fadeUp 0.9s ease 0.4s both;
+}
+
+.hero .hero-tagline {
+    animation: fadeUp 0.9s ease 0.5s both;
+}
+
+/* Gold text glow */
+.hero h1 span {
+    transition:
+        text-shadow 0.4s ease,
+        filter 0.4s ease;
+}
+
+.hero h1 span:hover {
+    text-shadow:
+        0 0 10px rgba(212, 175, 55, 0.5),
+        0 0 25px rgba(212, 175, 55, 0.25);
+}
+
+/* =========================================
+   PROFILE IMAGE
+========================================= */
+
+.profile-image {
+    animation:
+        profileReveal 1s ease both,
+        profileFloat 5s ease-in-out 1s infinite;
+    border-color: var(--gold);
+    will-change: transform;
+}
+
+.profile-image:hover {
+    transform: translateY(-5px) scale(1.04);
+    box-shadow:
+        0 0 15px rgba(212, 175, 55, 0.4),
+        0 0 35px rgba(212, 175, 55, 0.18);
+}
+
+/* =========================================
+   PREMIUM GOLD BUTTONS
+========================================= */
+
+.primary-btn,
+.secondary-btn,
+button[type="submit"] {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+/* Moving light reflection */
+.primary-btn::before,
+.secondary-btn::before,
+button[type="submit"]::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -120%;
+    width: 60%;
+    height: 200%;
+    background: linear-gradient(
+        100deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+    );
+    transform: rotate(20deg);
+    transition: left 0.65s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.primary-btn:hover::before,
+.secondary-btn:hover::before,
+button[type="submit"]:hover::before {
+    left: 160%;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+button[type="submit"]:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 8px 25px rgba(212, 175, 55, 0.2),
+        0 0 15px rgba(212, 175, 55, 0.12);
+}
+
+.primary-btn:active,
+.secondary-btn:active,
+button[type="submit"]:active {
+    transform: translateY(0) scale(0.98);
+}
+
+/* Disabled button while sending a message */
+button[type="submit"]:disabled {
+    opacity: 0.65;
+    cursor: wait;
+    transform: none;
+    box-shadow: none;
+}
+
+/* =========================================
+   PROJECT & SKILL CARDS
+========================================= */
+
+.project-card {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    transform: translateZ(0);
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    background-clip: padding-box;
+}
+
+/* Subtle gold light inside cards */
+.project-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        circle at top right,
+        rgba(212, 175, 55, 0.12),
+        transparent 55%
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(212, 175, 55, 0.65);
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.35),
+        0 0 18px rgba(212, 175, 55, 0.1);
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+/* Card headings brighten */
+.project-card h3,
+.project-card h4 {
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
+}
+
+.project-card:hover h3,
+.project-card:hover h4 {
+    color: var(--gold-light);
+    text-shadow: 0 0 12px rgba(212, 175, 55, 0.15);
+}
+
+/* Project links */
+.project-card a {
+    display: inline-block;
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.project-card a:hover {
+    color: var(--gold-light);
+    transform: translateX(5px);
+}
+
+/* =========================================
+   SECTION HEADINGS
+========================================= */
+
+.section h2 {
+    transition:
+        text-shadow 0.35s ease,
+        color 0.35s ease;
+}
+
+.section h2:hover {
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.18);
+}
+
+/* =========================================
+   CONTACT FORM
+========================================= */
+
+.contact-form input,
+.contact-form textarea {
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--gold);
+    box-shadow:
+        0 0 0 3px rgba(212, 175, 55, 0.08),
+        0 0 15px rgba(212, 175, 55, 0.08);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    transition: color 0.3s ease;
+}
+
+.contact-form input:focus::placeholder,
+.contact-form textarea:focus::placeholder {
+    color: rgba(212, 175, 55, 0.65);
+}
+
+/* Smooth status message appearance */
+#formMessage:not(:empty) {
+    animation: fadeUp 0.35s ease both;
+}
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+footer a {
+    transition:
+        color 0.3s ease,
+        text-shadow 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--gold-light);
+    text-shadow: 0 0 12px var(--gold-glow);
+}
+
+/* =========================================
+   ANIMATION KEYFRAMES
+========================================= */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes profileReveal {
+    from {
+        opacity: 0;
+        scale: 0.92;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+@keyframes profileFloat {
+    0%,
+    100% {
+        translate: 0 0;
+    }
+
+    50% {
+        translate: 0 -7px;
+    }
+}
+
+/* =========================================
+   KEYBOARD ACCESSIBILITY
+========================================= */
+
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--gold-light);
+    outline-offset: 4px;
+}
+
+/* =========================================
+   MOBILE OPTIMIZATION
+========================================= */
+
+@media (max-width: 768px) {
+    .project-card:hover {
+        transform: translateY(-4px);
+    }
+
+    .primary-btn:hover,
+    .secondary-btn:hover,
+    button[type="submit"]:hover {
+        transform: translateY(-2px);
+    }
+
+    .profile-image {
+        animation:
+            profileReveal 1s ease both,
+            profileFloat 6s ease-in-out 1s infinite;
+    }
+}
+
+/* =========================================
+   REDUCED MOTION ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+/* Disabled submit button */
+
+#submitButton:disabled {
+    opacity: 0.7;
+    cursor: wait;
+}
+```
