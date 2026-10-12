@@ -422,7 +422,7 @@ section {
     overflow: hidden;
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    background: linear-gradient(145deg, rgba(24, 37, 70, 0.84), rgba(12, 18, 37, 0.82));
+    background: linear-gradient(145deg, rgba(0, 1, 1, 0.84), rgba(12, 18, 37, 0.82));
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
     transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
     isolation: isolate;
